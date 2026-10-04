@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eaf4ff;
+    color: #1f2937;
+}
+
+.container {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.weather-app {
+    width: 420px;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.weather-app h1 {
+    text-align: center;
+
+    margin-bottom: 25px;
+
+    font-size: 32px;
+}
+
+.search-box {
+    display: flex;
+
+    gap: 10px;
+
+    margin-bottom: 15px;
+}
+
+.search-box input {
+    flex: 1;
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+}
+
+.search-box button {
+    padding: 12px 18px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #2563eb;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background: #1d4ed8;
+}
+
+#message {
+    text-align: center;
+
+    color: #dc2626;
+
+    min-height: 20px;
+
+    margin-bottom: 10px;
+}
+
+.weather-info {
+    background: #f5f9ff;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    text-align: center;
+}
+
+.weather-info h2 {
+    font-size: 26px;
+
+    margin-bottom: 15px;
+}
+
+#temperature {
+    font-size: 45px;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+#condition {
+    color: #64748b;
+
+    margin-bottom: 25px;
+}
+
+.details {
+    display: flex;
+
+    gap: 15px;
+}
+
+.detail {
+    flex: 1;
+
+    background: white;
+
+    padding: 15px;
+
+    border-radius: 10px;
+}
+
+.detail span {
+    display: block;
+
+    color: #64748b;
+
+    font-size: 13px;
+
+    margin-bottom: 8px;
+}
+
+.detail strong {
+    font-size: 18px;
+}
+
+@media (max-width: 500px) {
+
+    .weather-app {
+        width: 100%;
+
+        padding: 20px;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    .search-box button {
+        padding: 12px;
+    }
+
+    .details {
+        flex-direction: column;
+    }
+}
